@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&family=Red+Hat+Display:wght@400;600;900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      a,
+      button {
+        cursor: pointer;
+      }
+
+      body {
+        font-size: 16px;
+        background-color: hsl(225, 100%, 94%);
+        font-family: "Red Hat Display";
+        text-align: center;
+      }
+
+      .card {
+        width: 28rem;
+        background-color: white;
+        margin: 200px auto;
+        border-radius: 18px;
+        overflow: hidden;
+      }
+
+      .music_image {
+        width: 100%;
+      }
+
+      .bottom_info {
+        padding: 1rem 3rem;
+      }
+
+      .order_text {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2rem;
+      }
+
+      .title {
+        font-size: 1.7rem;
+        font-weight: 900;
+        margin: 1.3rem 0;
+      }
+
+      .description {
+        font-weight: 600;
+        color: #87899f;
+      }
+
+      .order_details {
+        background-color: hsl(225, 100%, 98%);
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      .details_left {
+        display: flex;
+      }
+
+      .details_list {
+        list-style-type: none;
+        padding-left: 1rem;
+      }
+
+      .plan_type {
+        font-weight: 900;
+        margin-bottom: 0.3rem;
+      }
+
+      .amount {
+        color: #87899f;
+        font-weight: 600;
+      }
+
+      .change_option {
+        font-weight: 700;
+      }
+
+      .change_option:hover {
+        text-decoration: none;
+        color: #766cf1;
+      }
+
+      .actions_list {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .submit {
+        width: 100%;
+        font-size: 15px;
+        font-weight: 600;
+        color: #f9f8ff;
+        background-color: #382ae1;
+        border: none;
+        border-radius: 10px;
+        height: 3rem;
+        margin-bottom: 2rem;
+      }
+
+      .submit:hover {
+        background-color: #766cf1;
+      }
+
+      .cancel {
+        text-decoration: none;
+        color: #6f748f;
+        font-weight: 700;
+        margin-bottom: 2rem;
+      }
+
+      .cancel:hover {
+        color: #1f2948;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card_image">
+        <img
+          class="music_image"
+          src="images/illustration-hero.svg"
+          alt="music hero"
+        />
+      </div>
+      <div class="bottom_info">
+        <div class="order_text">
+          <p class="title">Order Summary</p>
+          <p class="description">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </div>
+        <div class="order_details">
+          <div class="details_left">
+            <img src="/images/icon-music.svg" alt="subscription" />
+            <ul class="details_list">
+              <li class="plan_type">Annual Plan</li>
+              <li class="amount">$59.99/year</li>
+            </ul>
+          </div>
+          <a class="change_option" href="#">Change</a>
+        </div>
+        <div class="actions_list">
+          <button class="submit">Proceed to Payment</button>
+          <a class="cancel" href="#">Cancel Order</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Patrick Batungbacal</a>.
+    </div>
+  </body>
+</html>

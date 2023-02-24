@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: Outfit, sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card_container {
+  background-color: hsl(216, 50%, 16%);
+  width: 350px;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 14px;
+  box-shadow: 10px 30px 1px #0c1729;
+}
+
+.card {
+  padding: 20px;
+}
+
+.card_top {
+  border-bottom: 0.0001px solid hsl(215, 18%, 24%);
+}
+
+.nft_image,
+.nft_text,
+.nft_info,
+.card_top {
+  margin-bottom: 20px;
+}
+
+.nft_image img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.title:hover {
+  color: #1bfdfd;
+  cursor: pointer;
+}
+
+.nft_desc {
+  color: hsl(215, 15%, 54%);
+}
+
+.nft_details {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  color: #1bfdfd;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.price::before {
+  width: 11px;
+  height: 18px;
+  background: url(../nft-preview-card-component-main/images/icon-ethereum.svg)
+    no-repeat;
+  display: inline-block;
+  content: "";
+  margin-right: 5px;
+  vertical-align: sub;
+}
+
+.duration {
+  color: #8aa7d3;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.duration::before {
+  width: 17px;
+  height: 17px;
+  background: url(../nft-preview-card-component-main/images/icon-clock.svg)
+    no-repeat;
+  display: inline-block;
+  content: "";
+  margin-right: 5px;
+  vertical-align: sub;
+}
+
+.card_bottom {
+  display: flex;
+  align-items: center;
+}
+
+.author_photo {
+  width: 13%;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.nft_author {
+  color: #8aa7d3;
+}
+
+.author_name {
+  color: hsl(0, 0%, 100%) !important;
+}
+
+.author_name:hover {
+  color: #1bfdfd !important;
+  cursor: pointer;
+}

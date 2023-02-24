@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: 15px;
+        font-family: "Lexend Deca";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .sedan {
+        background-color: hsl(31, 77%, 52%);
+      }
+
+      .suv {
+        background-color: hsl(184, 100%, 22%);
+      }
+
+      .luxury {
+        background-color: hsl(179, 100%, 13%);
+      }
+
+      .btnSedan {
+        color: hsl(31, 77%, 52%);
+      }
+
+      .btnSuv {
+        color: hsl(184, 100%, 22%);
+      }
+
+      .btnLuxury {
+        color: hsl(179, 100%, 13%);
+      }
+
+      .container {
+        display: flex;
+        width: 57.6rem;
+        margin: 10.6rem auto;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .item {
+        padding: 3rem;
+      }
+
+      .car_text {
+        margin-top: 2rem;
+        margin-bottom: 5.5rem;
+        color: #ecf6f7;
+      }
+
+      .title {
+        font-family: "Big Shoulders Display";
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .description {
+        line-height: 1.5;
+      }
+
+      .btnLearn {
+        width: 70%;
+        height: 12%;
+        border-radius: 35px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        margin-bottom: 2rem;
+      }
+
+      @media screen and (max-width: 375px) {
+        .container {
+          width: 20rem;
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item sedan">
+        <div class="car">
+          <img
+            src="images/icon-sedans.svg"
+            alt="sedan"
+            width="64"
+            height="40"
+          />
+        </div>
+        <div class="car_text">
+          <h2 class="title">Sedans</h2>
+          <p class="description">
+            Choose a sedan for its affordability and excellent fuel economy.
+            Ideal for cruising in the city or on your next road trip.
+          </p>
+        </div>
+        <button class="btnLearn btnSedan">Learn More</button>
+      </div>
+      <div class="item suv">
+        <div class="car">
+          <img src="images/icon-suvs.svg" alt="SUV" width="64" height="40" />
+        </div>
+        <div class="car_text">
+          <h2 class="title">SUVs</h2>
+          <p class="description">
+            Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </p>
+        </div>
+        <button class="btnLearn btnSuv">Learn More</button>
+      </div>
+      <div class="item luxury">
+        <div class="car">
+          <img
+            src="images/icon-luxury.svg"
+            alt="luxury"
+            width="64"
+            height="40"
+          />
+        </div>
+        <div class="car_text">
+          <h2 class="title">Luxury</h2>
+          <p class="description">
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </p>
+        </div>
+        <button class="btnLearn btnLuxury">Learn More</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
